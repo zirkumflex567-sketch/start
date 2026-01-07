@@ -26,6 +26,12 @@ class TestSmoke(unittest.TestCase):
             self.assertTrue((root / "output").exists())
             self.assertTrue((root / "workspace").exists())
 
+    def test_docs_exist(self):
+        repo_root = Path(__file__).resolve().parents[1]
+        self.assertTrue((repo_root / "GAME_CONTEXT.md").exists())
+        self.assertTrue((repo_root / "PROJECT_CONSTRAINTS.md").exists())
+        self.assertTrue((repo_root / "TOMORROW_TASKS.md").exists())
+
 
 if __name__ == "__main__":
     unittest.main()

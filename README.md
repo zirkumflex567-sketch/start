@@ -7,13 +7,15 @@ simple Python scripts to check, fix, test, and (optionally) push changes.
 
 ```
 You are Codex running in a fresh repo. Do not ask questions. Follow this order:
-1) Run: python scripts/flow.py --auto
-2) If flow reports missing dependencies, follow its suggested commands.
-3) Re-run: python scripts/flow.py --auto
-4) Run tests: python scripts/run_tests.py
-5) If a git remote is configured and credentials are present, push changes:
+1) Read GAME_CONTEXT.md, PROJECT_CONSTRAINTS.md, and TOMORROW_TASKS.md.
+2) Run: python scripts/flow.py --auto
+3) If flow reports missing dependencies, follow its suggested commands.
+4) Re-run: python scripts/flow.py --auto
+5) Execute tasks in TOMORROW_TASKS.md (sections B and C).
+6) Run tests: python scripts/run_tests.py
+7) If a git remote is configured and credentials are present, push changes:
    python scripts/flow.py --push
-6) Finish with a short report of what you changed and what remains.
+8) Finish with a short report of what you changed and what remains.
 ```
 
 ## One-command local start
@@ -33,3 +35,9 @@ python scripts/flow.py --auto
 ## Startup guide
 
 See `STARTUP_GUIDE.md` for Windows setup notes and recommended tooling.
+
+## Game docs
+
+- `GAME_CONTEXT.md` - core vision and non-negotiables
+- `PROJECT_CONSTRAINTS.md` - tools, paths, and legal rules
+- `TOMORROW_TASKS.md` - Codex actions to prep the project
