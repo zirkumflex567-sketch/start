@@ -18,6 +18,16 @@ You are Codex running in a fresh repo. Do not ask questions. Follow this order:
 8) Finish with a short report of what you changed and what remains.
 ```
 
+## One-click environment setup
+
+Use the appropriate starter script below to build the local environment in one step:
+
+- Windows: double-click `scripts/one_click_setup.bat`
+- macOS/Linux: run `./scripts/one_click_setup.sh`
+
+Both scripts run `python scripts/flow.py --auto` and emit a `SETUP_REPORT.md` with
+any missing dependencies and next-step suggestions.
+
 ## One-command local start
 
 ```bash
